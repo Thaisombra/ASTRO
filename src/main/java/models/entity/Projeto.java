@@ -175,6 +175,20 @@ public class Projeto {//Declaração de variáveis
     }
 
     public void cadastrarRelatorio() {
+    }
 
+    public Relatorio submeterRelatorio(){
+    }
+
+    public void cadastrarFrequencia(){
+    }
+
+    public void visualizarFrequencia(){
+    }
+
+    public void adicionarParticipante(){
+    }
+
+    public void adicionarAtividade(){
     }
 }
