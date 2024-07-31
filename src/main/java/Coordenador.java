@@ -6,7 +6,10 @@ public class Coordenador {
       // projetosCoordenador Número de projetos.
 
     public void setProjetosCoordenador(int projetosCoordenador) {
-        this.projetosCoordenador = projetosCoordenador;
+        if(projetosCoordenador > 0){
+          this.projetosCoordenador = projetosCoordenador;
+        }
+          
     }
 
      // Retorna o número de projetos do coordenador.
