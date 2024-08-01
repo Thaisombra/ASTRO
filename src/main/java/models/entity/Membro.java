@@ -16,7 +16,7 @@ public class Membro {
         return nome;
     }
 
-    //Verifica se o campo esta null ou vazio
+
     public void setNome(String nome) {
         if(nome != null && !nome.isEmpty()){
     		this.nome = nome;
@@ -27,7 +27,7 @@ public class Membro {
         return cpf;
     }
 
-    //Verifica se o campo não é nulo, se possui de fato 11 digitos e se todos são numeros 
+
     public void setCpf(String cpf) {
         if (cpf != null && cpf.length() == 11 && cpf.matches("\\d+")) {
             this.cpf = cpf;
@@ -37,7 +37,7 @@ public class Membro {
     public String getSenha() {
         return senha;
     }
-    //verifica a mesma coisa do campo Nome
+
     public void setSenha(String senha) {
         if(senha != null && !senha.isEmpty()){
     		this.senha = senha;
@@ -57,7 +57,7 @@ public class Membro {
     public int getCargaHoraria(){
         return cargaHoraria;
     }    
-    //verifica para permitir apenas números maiores que zero
+
     public void setCargaHoraria(int cargaHoraria){
         if(cargaHoraria > 0){
             this.cargaHoraria = cargaHoraria;
@@ -67,10 +67,12 @@ public class Membro {
     public int getFrequencia(){
         return frequencia;
     }    
-    //verifica para permitir apenas números maiores que zero
+
     public void setFrequencia(int frequencia){
         if(frequencia > 0){
             this.frequencia = frequencia;
         }
     } 
+
+    //Os métodos serão adicionados futuramente.
 }
