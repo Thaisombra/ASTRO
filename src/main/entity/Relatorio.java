@@ -1,5 +1,5 @@
+package main.entity;
 
-import java.util.*;
 public class Relatorio {
     // Construtor padrão da classe 'Relatorio' que permite criar instancias da classe
     public Relatorio() {

@@ -1,17 +1,20 @@
-public class Projeto {//Declaração de variáveis
-    private int titulo;//Título do Projeto.
+package main.entity;
+
+
+public class Projeto {   //Declaração de variáveis
+    private int titulo;    //Título do Projeto.
     private int localAtuante;//
     private int areaPrincipalDeAtuacao;//
     private int areaSecundariaDeAtuacao;//
-    private int publicoEstimado;//Quantidade de pessoas que irão fazer parte.
-    private int palavrasChave;//
-    private int websiteDoProjeto;//Link numérico do website do projeto.
-    private int email;//Email do(s) responsável(eis) do projeto.
+    private int publicoEstimado;  //Quantidade de pessoas que irão fazer parte.
+    private int palavrasChave;   //
+    private int websiteDoProjeto; //Link numérico do website do projeto.
+    private int email;  //Email do(s) responsável(eis) do projeto.
     private int unidadePertencente;//
-    private long telefone;//Telefone do(s) responsável(eis) do projeto.
+    private long telefone;   //Telefone do(s) responsável(eis) do projeto.
     private long dataDeVigencia;//
-    private boolean projetoAtivo;//Projeto está ou não ativo.
-    private boolean vinculoComOutrosProjetos;//Aviso de vínculo com algum outro projeto.
+    private boolean projetoAtivo;   //Projeto está ou não ativo.
+    private boolean vinculoComOutrosProjetos;  //Aviso de vínculo com algum outro projeto.
 
     //Getters
 
@@ -177,8 +180,8 @@ public class Projeto {//Declaração de variáveis
     public void cadastrarRelatorio() {
     }
 
-    public Relatorio submeterRelatorio(){
-    }
+    //public Relatorio submeterRelatorio(){
+    //}
 
     public void cadastrarFrequencia(){
     }

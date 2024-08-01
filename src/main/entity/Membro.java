@@ -1,4 +1,4 @@
-package models.entity;
+package main.entity;
 
 //O enum ainda não esta funcional.
 //import models.enums.TipoDeMembro;

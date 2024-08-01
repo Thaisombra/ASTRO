@@ -1,4 +1,4 @@
-package models.enums;
+package main.models.enums;
 
 public enum TipoDeMembro {
     BOLSISTA,

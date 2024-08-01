@@ -1,4 +1,4 @@
-package models.entity;
+package main.entity;
 
 
 public class Aluno extends Membro{
