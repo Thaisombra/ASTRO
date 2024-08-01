@@ -1,3 +1,4 @@
+<<<<<<< HEAD:src/main/entity/Projeto.java
 package main.entity;
 
 
@@ -15,10 +16,28 @@ public class Projeto {   //Declaração de variáveis
     private long dataDeVigencia;//
     private boolean projetoAtivo;   //Projeto está ou não ativo.
     private boolean vinculoComOutrosProjetos;  //Aviso de vínculo com algum outro projeto.
+=======
+import java.util.Date;
+
+public class Projeto {//Declaração de variáveis
+    private int localAtuante;// Perguntar para os membros da equipe como isso deveria funcionar
+    private int areaPrincipalDeAtuacao;// Perguntar se isso é um código ou um nome
+    private int areaSecundariaDeAtuacao;// Mesma coisa
+    private int publicoEstimado;//Quantidade de pessoas que irão fazer parte.
+    private int unidadePertencente;//
+    private String[] palavrasChave;//
+    private String websiteDoProjeto;//Link numérico do website do projeto.
+    private String email;//Email do(s) responsável(eis) do projeto.
+    private String titulo;//Título do Projeto.
+    private String telefone;//Telefone do(s) responsável(eis) do projeto.
+    private Date dataDeVigencia;//Data em que o projeto iniciou.
+    private Projeto[] vinculoComOutrosProjetos;//Aviso de vínculo com algum outro projeto.
+    private boolean projetoAtivo;//Projeto está ou não ativo.
+>>>>>>> 122403f7b787832942374b7ca477fd90a9e3208e:src/main/java/models/entity/Projeto.java
 
     //Getters
 
-    public int getTitulo() {
+    public String getTitulo() {
         return titulo;
     }
 
@@ -38,15 +57,15 @@ public class Projeto {   //Declaração de variáveis
         return publicoEstimado;
     }
 
-    public int getPalavrasChave() {
+    public String[] getPalavrasChave() {
         return palavrasChave;
     }
 
-    public int getWebsiteDoProjeto() {
+    public String  getWebsiteDoProjeto() {
         return websiteDoProjeto;
     }
 
-    public int getEmail() {
+    public String getEmail() {
         return email;
     }
 
@@ -54,11 +73,11 @@ public class Projeto {   //Declaração de variáveis
         return unidadePertencente;
     }
 
-    public long getTelefone() {
+    public String getTelefone() {
         return telefone;
     }
 
-    public long getDataDeVigencia() {
+    public Date getDataDeVigencia() {
         return dataDeVigencia;
     }
 
@@ -66,29 +85,25 @@ public class Projeto {   //Declaração de variáveis
         return projetoAtivo;
     }
 
-    public boolean isVinculoComOutrosProjetos() {
+    public Projeto[] isVinculoComOutrosProjetos() {
         return vinculoComOutrosProjetos;
     }
 
     //Setters
 
-    public void setTitulo(int titulo) {
-        if (titulo >= 0) {
+    public void setTitulo(String titulo) {//setando o titulo do projeto.
+        if (titulo != null) {
             this.titulo = titulo;
-        } else {
-            System.out.println("O titulo nao foi encontrado!");
         }
     }
 
-    public void setLocalAtuante(int localAtuante) {
+    public void setLocalAtuante(int localAtuante) {//setando local de atuação do projeto.
         if (localAtuante >= 0) {
             this.localAtuante = localAtuante;
-        } else {
-            System.out.println("O local atuante nao foi encontrado!");
         }
     }
 
-    public void setAreaPrincipalDeAtuacao(int areaPrincipalDeAtuacao) {
+    public void setAreaPrincipalDeAtuacao(int areaPrincipalDeAtuacao) {//setando o as areas de especialização do projeto.
         if (areaPrincipalDeAtuacao >= 0) {
             this.areaPrincipalDeAtuacao = areaPrincipalDeAtuacao;
         } else {
@@ -96,7 +111,7 @@ public class Projeto {   //Declaração de variáveis
         }
     }
 
-    public void setAreaSecundariaDeAtuacao(int areaSecundariaDeAtuacao) {
+    public void setAreaSecundariaDeAtuacao(int areaSecundariaDeAtuacao) {//area secundaria de atuação.
         if (areaSecundariaDeAtuacao >= 0) {
             this.areaSecundariaDeAtuacao = areaSecundariaDeAtuacao;
         } else {
@@ -104,8 +119,8 @@ public class Projeto {   //Declaração de variáveis
         }
     }
 
-    public void setPublicoEstimado(int publicoEstimado) {
-        int limite = 20;
+    public void setPublicoEstimado(int publicoEstimado) {//definindo o publico/participantes previstos das reuniões.
+        int limite = 20;//limite de participantes.
         if (publicoEstimado >= 0 && publicoEstimado <= limite) {
             this.publicoEstimado = publicoEstimado;
         } else {
@@ -113,31 +128,25 @@ public class Projeto {   //Declaração de variáveis
         }
     }
 
-    public void setPalavrasChave(int palavrasChave) {
-        if (palavrasChave >= 0) {
+    public void setPalavrasChave(String[] palavrasChave) {//palavras-chave para busca dos artigos sobre o projeto.
+        if (palavrasChave != null) {
             this.palavrasChave = palavrasChave;
-        } else {
-            System.out.println("A palavra chave nao foi encontrada!");
         }
     }
 
-    public void setWebsiteDoProjeto(int websiteDoProjeto) {
-        if (websiteDoProjeto >= 0) {
+    public void setWebsiteDoProjeto(String websiteDoProjeto) {//url do website do projeto.
+        if (websiteDoProjeto != null) {
             this.websiteDoProjeto = websiteDoProjeto;
-        } else {
-            System.out.println("O link do website nao foi encontrado!");
         }
     }
 
-    public void setEmail(int email) {
-        if (email >= 0) {
+    public void setEmail(String email) {//email do responsável.
+        if (email != null) {
             this.email = email;
-        } else {
-            System.out.println("O email nao foi encontrado!");
         }
     }
 
-    public void setUnidadePertencente(int unidadePertencente) {
+    public void setUnidadePertencente(int unidadePertencente) {//bloco e sala em que o projeto será realizado.
         if (unidadePertencente >= 0) {
             this.unidadePertencente = unidadePertencente;
         } else {
@@ -145,23 +154,19 @@ public class Projeto {   //Declaração de variáveis
         }
     }
 
-    public void setTelefone(long telefone) {
-        if (telefone >= 0) {
+    public void setTelefone(String telefone) {//telefone do coordenador do projeto.
+        if (telefone != null) {
             this.telefone = telefone;
-        } else {
-            System.out.println("O numero de telefone nao foi encontrado!");
         }
     }
 
-    public void setDataDeVigencia(long dataDeVigencia) {
-        if (dataDeVigencia >= 0) {
+    public void setDataDeVigencia(Date dataDeVigencia) {//data de inicio das pesquisas do projeto.
+        if (dataDeVigencia != null) {
             this.dataDeVigencia = dataDeVigencia;
-        } else {
-            System.out.println("A data de vigencia nao existe!");
         }
     }
 
-    public void setProjetoAtivo(boolean projetoAtivo) {
+    public void setProjetoAtivo(boolean projetoAtivo) {//projeto está ou não ativo.
         if (projetoAtivo) {
             this.projetoAtivo = true;
         } else {
@@ -169,29 +174,37 @@ public class Projeto {   //Declaração de variáveis
         }
     }
 
-    public void setVinculoComOutrosProjetos(boolean vinculoComOutrosProjetos) {
-        if (vinculoComOutrosProjetos) {
-            this.vinculoComOutrosProjetos = true;
-        } else {
-            System.out.println("O projeto nao esta vinculado a nenhum outro projeto existente!");
+    public void setVinculoComOutrosProjetos(Projeto[] vinculoComOutrosProjetos) {//lista de projetos parceiros.
+            this.vinculoComOutrosProjetos = vinculoComOutrosProjetos;
+    }
+
+    public void setVinculoComOutrosProjetos(Projeto vinculoComOutrosProjetos) {//sobrecarga para a lista de projetos vinculados.
+        if(this.vinculoComOutrosProjetos != null){
+            this.vinculoComOutrosProjetos[this.vinculoComOutrosProjetos.length+1] = vinculoComOutrosProjetos;
         }
     }
 
-    public void cadastrarRelatorio() {
+    public void cadastrarRelatorio() {//função/operação de cadstro do relatório das reuniões e progresso do projeto.
     }
 
+<<<<<<< HEAD:src/main/entity/Projeto.java
     //public Relatorio submeterRelatorio(){
     //}
+=======
+    /*public Relatorio submeterRelatorio(){
+    }*/
 
-    public void cadastrarFrequencia(){
+    public void cadastrarFrequencia(){//função/operação de cadastro da frequência dos participantes.
+    }
+>>>>>>> 122403f7b787832942374b7ca477fd90a9e3208e:src/main/java/models/entity/Projeto.java
+
+    public void visualizarFrequencia(){//função/operação para a visualização dos participantes presentes daquele dia.
     }
 
-    public void visualizarFrequencia(){
+    public void adicionarParticipante(){//função/operação para adição de novos participantes.
     }
 
-    public void adicionarParticipante(){
+    public void adicionarAtividade(){//função/operação para adição de novas atividades a serem desenvolvidas.
     }
 
-    public void adicionarAtividade(){
-    }
 }
