@@ -1,7 +1,7 @@
 package main.controllers;
 
 import main.dao.CoordenadorDAO;
-import main.entity.Coordenador;
+import model.Coordenador;
 
 public class CoordenadorController {
     private CoordenadorDAO coordenadorDAO = new CoordenadorDAO();

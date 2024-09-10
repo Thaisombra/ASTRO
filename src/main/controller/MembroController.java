@@ -1,6 +1,6 @@
 package main.controllers;
 import main.dao.MembroDAO;
-import main.entity.Membro;
+import main.model.Membro;
 
 public class MembroController {
     private MembroDAO membroDAO = new MembroDAO();
